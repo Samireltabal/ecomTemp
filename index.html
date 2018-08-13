@@ -5,17 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ecommerce</title>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/app.css">
+    <link rel="stylesheet" href="public/css/custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+        <a class="navbar-brand" href="/">Ecommerce</a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#MainNavigation" aria-controls="MainNavigation"
+            aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars" area-hidden='true'></i></button>
+        <div class="collapse navbar-collapse" id="MainNavigation">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+            </ul>
+            
+            <ul class='navbar-nav ml-auto mt-0 mt-lg-0'>
+                    <form class="form-inline my-2 my-lg-0" id='searchBar'>
+                            <div class="input-group search-form">
+                                    <button type='submit' class="input-group-addon btn btn-primary"><i class="fa fa-search"></i></button>
+                                    <input id="search" type="text" class="form-control" name="q" placeholder="Search">
+                            </div>
+                    </form>
+                <li class="nav-item pull-right d-none d-lg-block">
+                    <a href="#" id='expandSearch' class="nav-link"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="owl-carousel owl-theme hero-slider">
+                    <div class='row slider-item' style='background-image: url("https://picsum.photos/1200/600?image=0");'>
+                        <div class="col-lg-12">
+                            <h1 class="ml2 text-center mt-5">Sunny mornings</h1>
+                            <p class='text-center'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio voluptatibus ducimus quasi, facilis sunt ullam corporis magnam expedita tenetur commodi, minima, quisquam quos repellendus totam ipsa? Totam, ea cupiditate.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- repeated items -->
+                    <div class='row slider-item' style='background-image: url("https://picsum.photos/1200/600?image=1");'>
+                        <div class="col-lg-12">
+                            <h1 class="ml2 text-center mt-5">Sunny mornings</h1>
+                            <p class='text-center'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio voluptatibus ducimus quasi, facilis sunt ullam corporis magnam expedita tenetur commodi, minima, quisquam quos repellendus totam ipsa? Totam, ea cupiditate.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='row slider-item' style='background-image: url("https://picsum.photos/1200/600?image=2");'>
+                        <div class="col-lg-12">
+                            <h1 class="ml2 text-center mt-5">Sunny mornings</h1>
+                            <p class='text-center'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio voluptatibus ducimus quasi, facilis sunt ullam corporis magnam expedita tenetur commodi, minima, quisquam quos repellendus totam ipsa? Totam, ea cupiditate.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='row slider-item' style='background-image: url("https://picsum.photos/1200/600?image=3");'>
+                        <div class="col-lg-12">
+                            <h1 class="ml2 text-center mt-5">Sunny mornings</h1>
+                            <p class='text-center'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio voluptatibus ducimus quasi, facilis sunt ullam corporis magnam expedita tenetur commodi, minima, quisquam quos repellendus totam ipsa? Totam, ea cupiditate.
+                            </p>
+                        </div>
+                    </div>
+                
+                    
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h1>Hello World</h1>
+                <img src="./assets/imgs/pallete.jpg" class='img-fluid' alt="pallete" srcset=" ">
+            </div>
+            <div class="col-lg-12">
+                Section
             </div>
         </div>
     </div>
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 section-1">
+                    <p>Logo</p>
+                    <ul class="social">
+                        <li><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter-square fa-2x"></i></li>
+                        <li><i class="fa fa-instagram fa-2x"></i></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 lists">
+                    <ul>
+                        <li><a href="#">Main</a></li>
+                        <li><a href="#">Tos</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 lists">2</div>
+                <div class="col-lg-2 lists">3</div>
+                <div class="col-lg-2 lists">4</div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+   <script src="./public/js/app.js"></script>
+   <script>
+   
+    </script>
 </body>
 </html>

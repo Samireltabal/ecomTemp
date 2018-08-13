@@ -1,0 +1,134 @@
+/* change the background color */
+.navbar-custom {     
+    background-color: $navBg;
+    transition: 0.3s;
+    @include respond-to(handheld) {
+       
+    }
+    @include respond-to(medium-screens) {
+       
+    }
+    @include respond-to(wide-screens) { 
+      .dropdown-menu {
+        background: rgba(255,255,255,0.4);
+                border-radius:0;
+      }
+    }
+    @include respond-to(extra-wide-screens) { 
+      .dropdown-menu {
+        background: rgba(255,255,255,0.4);
+        border-radius:0;
+        border:none;
+      }
+    }
+        .navbar-brand {
+          color: $navbar-dark-color;
+      
+          @include hover-focus {
+            color: $navbar-dark-color;
+          }
+        }
+      
+        .navbar-nav {
+          .nav-link {
+            color: $navbar-dark-color;
+      
+            @include hover-focus {
+              color: $navbar-dark-hover-color;
+            }
+      
+            &.disabled {
+              color: $navbar-dark-disabled-color;
+            }
+          }
+      
+          .show > .nav-link,
+          .active > .nav-link,
+          .nav-link.show,
+          .nav-link.active {
+            color: $navbar-dark-active-color;
+          }
+        }
+      
+        .navbar-toggler {
+          color: $navbar-dark-color;
+          border-color: $navbar-dark-toggler-border-color;
+        }
+      
+        .navbar-toggler-icon {
+          background-image: $navbar-dark-toggler-icon-bg;
+        }
+      
+        .navbar-text {
+          color: $navbar-dark-color;
+          a {
+            color: $navbar-dark-active-color;
+      
+            @include hover-focus {
+              color: $navbar-dark-active-color;
+            }
+          }
+        }
+      }
+
+.scrolled {
+  .dropdown-menu
+  {
+    @include respond-to(wide-screens) { 
+    background:#fff;  
+  }
+  @include respond-to(extra-wide-screens) { 
+    background:#fff;  
+  }
+}
+    background:$navBgScrolled;
+    transition: 0.3s;
+    .navbar-brand {
+        color: $navbar-light-active-color;
+    
+        @include hover-focus {
+          color: $navbar-light-active-color;
+        }
+      }
+    
+      .navbar-nav {
+        .nav-link {
+          color: $navbar-light-color;
+    
+          @include hover-focus {
+            color: $navbar-light-hover-color;
+          }
+    
+          &.disabled {
+            color: $navbar-light-disabled-color;
+          }
+        }
+    
+        .show > .nav-link,
+        .active > .nav-link,
+        .nav-link.show,
+        .nav-link.active {
+          color: $navbar-light-active-color;
+        }
+      }
+    
+      .navbar-toggler {
+        color: $navbar-light-color;
+        border-color: $navbar-light-toggler-border-color;
+      }
+    
+      .navbar-toggler-icon {
+        background-image: $navbar-light-toggler-icon-bg;
+      }
+    
+      .navbar-text {
+        color: $navbar-light-color;
+        a {
+          color: $navbar-light-active-color;
+    
+          @include hover-focus {
+            color: $navbar-light-active-color;
+          }
+        }
+      }
+} 
